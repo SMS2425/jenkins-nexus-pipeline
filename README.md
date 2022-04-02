@@ -43,6 +43,7 @@ pipeline {
                    sh "mvn package"
                }
            }
+           }
         stage("publish to nexus") {
             steps {
                 script {
